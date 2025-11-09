@@ -14,9 +14,8 @@ jobs:
 
       - name: Run feed generation
         run: python src/generate_feeds.py
-
       - name: Run feed validation
-        run: python src/validate_feeds.py
+        run: python src/validate_feeds.py output/ct_geminiaccess_20251105.csv output/ct_glossary_feed_20251105.csv
 
       - name: Archive output
         run: |
