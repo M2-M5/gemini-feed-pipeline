@@ -1,0 +1,24 @@
+name: Run Gemini Feed Pipeline
+
+on:
+  workflow_dispatch:
+
+jobs:
+  run-feed-pipeline:
+    if: github.actor == 'kz-h45'  # Replace with your GitHub username
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run feed generation
+        run: python src/generate_feeds.py
+
+      - name: Run feed validation
+        run: python src/validate_feeds.py
+
+      - name: Archive output
+        run: |
+          mkdir -Force output/archive
+          Copy-Item output/*.csv output/archive/
