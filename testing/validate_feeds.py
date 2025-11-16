@@ -73,6 +73,7 @@ def validate_account_feed():
             print(f"  [FAIL] Line {i}: Incorrect personalAccount flag for email {row[7]}")
 
         roles = row[12].split(';')
+        # Check for empty roles between semicolons
         if row[12].strip() != '' and not all(role.strip() for role in roles):
             all_app_roles_valid = False
             print(f"  [FAIL] Line {i}: Invalid applicationRole format: '{row[12]}'")
