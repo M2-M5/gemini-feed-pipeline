@@ -3,7 +3,7 @@ import datetime
 import csv
 
 # Define file paths
-CMT_GENUSERACCESS_FILE = "C:\Users\zhenq\Desktop\G\input\cmt_genuseraccess_20251115.csv"
+CMT_GENUSERACCESS_FILE = "C:\Users\zhenq\LocalDesktop\G\input\cmt_genuseraccess_20251115.csv"
 GLOSSARY_FILE = "C:\Users\zhenq\Desktop\G\input\glossary.xlsx"
 ACCOUNT_OUTPUT_FILE = "C:\Users\zhenq\Desktop\G\output\gt_account_feed.csv"
 GLOSSARY_OUTPUT_FILE = "C:\Users\zhenq\Desktop\G\output\gt_glossary_feed.csv"
