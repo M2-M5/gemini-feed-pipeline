@@ -6,7 +6,7 @@ on:
 jobs:
   run-feed-pipeline:
     if: github.actor == 'M2-M5'  # Replace with your GitHub username
-    runs-on: self-hosted
+    runs-on: [self-hosted,Windows,X64]
 
     steps:
       - name: Checkout repository
